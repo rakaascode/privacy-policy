@@ -1,80 +1,545 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kebijakan Privasi</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 24px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    hr {
-      margin: 24px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wifora App</title>
+    <meta name="description" content="Privacy Policy for Wifora - Local Wi-Fi Peer-to-Peer Chat Application. Learn how we respect and protect your privacy.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --primary: #38bdf8;
+            --primary-glow: rgba(56, 189, 248, 0.15);
+            --accent: #818cf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --badge-bg: rgba(56, 189, 248, 0.12);
+            --badge-border: rgba(56, 189, 248, 0.3);
+            --code-bg: #090d16;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 75%, rgba(129, 140, 248, 0.08) 0%, transparent 40%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px 30px;
+            margin-bottom: 30px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: var(--badge-bg);
+            border: 1px solid var(--badge-border);
+            border-radius: 9999px;
+            color: var(--primary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            margin-bottom: 16px;
+        }
+
+        .app-badge svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            color: var(--text-dim);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--card-border);
+            padding-top: 16px;
+            margin-top: 16px;
+        }
+
+        /* Highlight Grid */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .summary-card-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--badge-bg);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .summary-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        .summary-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Content Card */
+        .content-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin-bottom: 36px;
+        }
+
+        .toc-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px 20px;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.925rem;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+        }
+
+        /* Policy Sections */
+        section {
+            margin-bottom: 36px;
+            scroll-margin-top: 30px;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        h2 span.section-number {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-size: 0.975rem;
+        }
+
+        ul {
+            color: var(--text-muted);
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 0.975rem;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        /* Permission table */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border: 1px solid var(--card-border);
+        }
+
+        th {
+            background: rgba(15, 23, 42, 0.8);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        td {
+            background: rgba(15, 23, 42, 0.3);
+            color: var(--text-muted);
+        }
+
+        td.perm-name {
+            font-family: monospace;
+            color: var(--accent);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* Callout Box */
+        .callout {
+            background: var(--badge-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 20px 0;
+        }
+
+        .callout p {
+            margin: 0;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            margin-top: 16px;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            background: var(--badge-bg);
+            padding: 6px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--badge-border);
+            margin-top: 8px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-dim);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 10px;
+            }
+
+            .content-card {
+                padding: 24px 18px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>Kebijakan Privasi</h1>
-<p><em>Terakhir diperbarui: 30 Desember 2025</em></p>
+<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="app-badge">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+            WIFORA APP
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Local Wi-Fi Peer-to-Peer Messaging Application</p>
+        <div class="meta-info">
+            <span><strong>Effective Date:</strong> August 15, 2026</span>
+            <span>•</span>
+            <span><strong>Version:</strong> 1.0</span>
+        </div>
+    </header>
 
-<hr>
+    <!-- Key Highlights Summary -->
+    <div class="summary-grid">
+        <div class="summary-card">
+            <div class="summary-card-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            </div>
+            <h3>Zero Central Server</h3>
+            <p>Your messages and profile data never pass through or store on any cloud server.</p>
+        </div>
 
-<p>
-Kami menghargai privasi Anda. Halaman ini menjelaskan bagaimana bot Telegram kami
-mengumpulkan, menggunakan, dan melindungi data pengguna dalam layanan Closed Testing.
-</p>
+        <div class="summary-card">
+            <div class="summary-card-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3>Local Storage Only</h3>
+            <p>Chat history and settings are saved exclusively on your device's local database.</p>
+        </div>
 
-<h2>1. Informasi yang Dikumpulkan</h2>
-<ul>
-  <li>Nama aplikasi dan package</li>
-  <li>Email tester</li>
-  <li>ID pesanan dan status</li>
-  <li>Telegram User ID</li>
-</ul>
+        <div class="summary-card">
+            <div class="summary-card-icon">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18.364 5.636a9 9 0 010 12.728m-12.728 0a9 9 0 010-12.728m12.728 0L5.636 18.364"></path></svg>
+            </div>
+            <h3>No Tracking & No Ads</h3>
+            <p>We do not use advertising SDKs, analytics tracking, or third-party data brokers.</p>
+        </div>
+    </div>
 
-<h2>2. Penggunaan Data</h2>
-<p>
-Data digunakan untuk memproses layanan Closed Testing, pembayaran, dan pengiriman status.
-</p>
+    <!-- Main Content Card -->
+    <div class="content-card">
 
-<h2>3. Pembayaran</h2>
-<p>
-Pembayaran diproses melalui pihak ketiga (Midtrans / QRIS). Kami tidak menyimpan data pembayaran sensitif.
-</p>
+        <!-- Table of Contents -->
+        <nav class="toc">
+            <div class="toc-title">Table of Contents</div>
+            <ul class="toc-list">
+                <li><a href="#section-1">1. Introduction & Architecture</a></li>
+                <li><a href="#section-2">2. Data We Collect & Use</a></li>
+                <li><a href="#section-3">3. Android Permissions Rationale</a></li>
+                <li><a href="#section-4">4. Data Storage & Retention</a></li>
+                <li><a href="#section-5">5. Third-Party Services</a></li>
+                <li><a href="#section-6">6. Children's Privacy</a></li>
+                <li><a href="#section-7">7. Security Measures</a></li>
+                <li><a href="#section-8">8. Changes to This Policy</a></li>
+                <li><a href="#section-9">9. Contact Us</a></li>
+            </ul>
+        </nav>
 
-<h2>4. Pihak Ketiga</h2>
-<p>
-Data hanya dibagikan kepada layanan terkait seperti Google Play dan penyedia pembayaran.
-</p>
+        <!-- Section 1 -->
+        <section id="section-1">
+            <h2><span class="section-number">1.</span> Introduction & Architecture</h2>
+            <p>This Privacy Policy applies to the <strong>Wifora</strong> mobile application (hereinafter referred to as "the Application" or "Wifora"). Wifora is designed as an offline-first, local peer-to-peer (P2P) communication tool that allows devices connected to the same Wi-Fi network or local access point to discover each other and exchange messages.</p>
+            <div class="callout">
+                <p><strong>Core Privacy Commitment:</strong> Wifora operates without any central server infrastructure. We do not own, operate, or connect to any remote database to process your chat data, profile information, or network activity.</p>
+            </div>
+        </section>
 
-<h2>5. Keamanan Data</h2>
-<p>
-Kami menjaga keamanan data dengan langkah wajar sesuai praktik terbaik.
-</p>
+        <!-- Section 2 -->
+        <section id="section-2">
+            <h2><span class="section-number">2.</span> Data We Collect & How It Is Processed</h2>
+            <p>Because Wifora operates strictly on your local network, personal data collection by the developer is zero. However, to enable local discovery and chat features, the application processes the following information locally on your device:</p>
+            
+            <ul>
+                <li><strong>Profile Information (Display Name):</strong> When you set up your user profile, you choose a display name. This name is broadcast strictly across your current local Wi-Fi network using Network Service Discovery (NSD) so other local peers can identify you in chat.</li>
+                <li><strong>Local Messages & Chat Content:</strong> Messages sent in private or group ("Ruang Bersama") chats are transmitted directly between devices via standard UDP/TCP network sockets on the local network.</li>
+                <li><strong>Network Identifiers (SSID & Local IP):</strong> The application reads the connected Wi-Fi Network Name (SSID) and local IP address to identify local network boundaries and group devices on the same Wi-Fi.</li>
+            </ul>
+            <p>None of the above information is transmitted outside your local Wi-Fi environment or sent to the developer.</p>
+        </section>
 
-<h2>6. Hak Pengguna</h2>
-<p>
-Anda dapat meminta penghapusan atau koreksi data dengan menghubungi admin bot.
-</p>
+        <!-- Section 3 -->
+        <section id="section-3">
+            <h2><span class="section-number">3.</span> Android Runtime Permissions Rationale</h2>
+            <p>To deliver local peer-to-peer functionality, Wifora requires specific system permissions on your Android device. Below is a transparent breakdown of why each permission is requested:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose & Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="perm-name">ACCESS_FINE_LOCATION</td>
+                            <td>Required by Android OS (Android 8.0 through Android 12) to read the Wi-Fi Network Name (SSID). Wifora uses SSID solely to verify if devices are on the same Wi-Fi. <strong>We do NOT track, log, or record your physical GPS location.</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="perm-name">NEARBY_WIFI_DEVICES</td>
+                            <td>Required on Android 13+ (API level 33+) to perform Network Service Discovery (NSD) for discovering local peers without requesting physical location access (configured with <code>neverForLocation</code> flag).</td>
+                        </tr>
+                        <tr>
+                            <td class="perm-name">POST_NOTIFICATIONS</td>
+                            <td>Used on Android 13+ to display local notifications when a new peer message arrives while the application is in the background.</td>
+                        </tr>
+                        <tr>
+                            <td class="perm-name">CHANGE_WIFI_MULTICAST_STATE</td>
+                            <td>Required to enable UDP Multicast socket listeners so your device can participate in local group chat rooms on the shared Wi-Fi network.</td>
+                        </tr>
+                        <tr>
+                            <td class="perm-name">ACCESS_WIFI_STATE &<br>ACCESS_NETWORK_STATE</td>
+                            <td>Used to verify active Wi-Fi network connectivity and establish local socket connections between peers.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-<h2>7. Perubahan</h2>
-<p>
-Kebijakan ini dapat diperbarui sewaktu-waktu.
-</p>
+        <!-- Section 4 -->
+        <section id="section-4">
+            <h2><span class="section-number">4.</span> Data Storage, Retention & Deletion</h2>
+            <p>All data generated within Wifora resides locally on your Android device:</p>
+            <ul>
+                <li><strong>Local Storage:</strong> Your display name, active peers list, and local message history are stored in an internal SQLite/Room database located within the app's protected sandbox storage space.</li>
+                <li><strong>Data Retention:</strong> Data remains on your device until you manually clear it or uninstall the application.</li>
+                <li><strong>Data Deletion:</strong> You can completely remove all stored profile data and chat history at any time by navigating to your device's <strong>Settings > Apps > Wifora > Storage > Clear Data</strong>, or simply by uninstalling the application.</li>
+            </ul>
+        </section>
 
-<h2>8. Kontak</h2>
-<p>
-Hubungi admin melalui Telegram Bot ini. atau melalu halaman website metronewtech.site
-</p>
+        <!-- Section 5 -->
+        <section id="section-5">
+            <h2><span class="section-number">5.</span> Third-Party Services & Data Sharing</h2>
+            <p>Wifora values your privacy and independence. Therefore:</p>
+            <ul>
+                <li>We <strong>do not integration any third-party analytics</strong> SDKs (such as Google Analytics, Firebase Analytics, or Mixpanel).</li>
+                <li>We <strong>do not include advertising SDKs</strong> (such as Google AdMob).</li>
+                <li>We <strong>do not sell, rent, trade, or share</strong> any user data with third-party data brokers or marketing companies under any circumstances.</li>
+            </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="section-6">
+            <h2><span class="section-number">6.</span> Children's Privacy (COPPA & GDPR Compliance)</h2>
+            <p>Wifora is designed for general audiences. Because our application does not collect, store, or transmit personal data to any external server, it is fully compliant with the Children's Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR). We do not knowingly collect personal information from children under the age of 13 (or 16 in certain jurisdictions).</p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="section-7">
+            <h2><span class="section-number">7.</span> Security & Local Encryption</h2>
+            <p>Communication within Wifora takes place over your local Wi-Fi network. While data is bounded within your local Wi-Fi coverage area, local network security depends on the security of the Wi-Fi network you are connected to (e.g., WPA2/WPA3 password protection). We advise users to use secure, trusted Wi-Fi networks when communicating on local channels.</p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="section-8">
+            <h2><span class="section-number">8.</span> Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect changes in app functionality or legal requirements. Any updates will be published on this page with a revised "Effective Date". We encourage users to review this Privacy Policy periodically for any updates.</p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="section-9">
+            <h2><span class="section-number">9.</span> Contact Us</h2>
+            <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or the privacy practices of Wifora, please contact the developer at:</p>
+            
+            <div class="contact-box">
+                <p><strong>Wifora Development Team</strong></p>
+                <p>MetroLabs Developer Studio</p>
+                <a href="mailto:support@metrolabs.site" class="contact-email">support@metrolabs.site</a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Wifora App / MetroLabs. All Rights Reserved.</p>
+    </footer>
+</div>
 
 </body>
 </html>
