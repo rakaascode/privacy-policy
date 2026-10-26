@@ -36,3 +36,7 @@ Aturan ini berlaku untuk seluruh repository dan setiap aplikasi baru. Instruksi 
 - Periksa tautan, tampilan ponsel/desktop yang terdampak, dan `git diff --check`. Untuk perubahan tampilan saja, pastikan teks kebijakan tetap utuh.
 - Commit dan push sesuai otorisasi pengguna. Bedakan status sudah dipush, build berjalan, dan sudah tayang. Jangan menyatakan sudah tayang sebelum memverifikasi build dan halaman publik.
 - Jangan menghapus label draf hanya karena halaman sudah diterbitkan. Jadikan kebijakan resmi setelah fakta dan tanggal berlaku sudah dipastikan.
+
+## Identitas footer
+
+- Gunakan teks copyright berikut pada seluruh halaman: `© 2026 PT Metro Labs Software`.
