@@ -1,5 +1,5 @@
 /* Shared compact, classic HTML layout for every privacy page. */
-body { margin:8px; background:#fff; color:#000; font:16px/1.25 "Times New Roman",Times,serif; overflow-wrap:anywhere; }
+body { margin:8px 24px; background:#fff; color:#000; font:16px/1.25 "Times New Roman",Times,serif; overflow-wrap:anywhere; }
 a:link { color:#0000ee; }
 a:visited { color:#551a8b; }
 a:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
@@ -37,6 +37,7 @@ code,.perm-name { font-family:monospace; font-size:.9em; overflow-wrap:anywhere;
 .contact-box p { margin:4px 0; }
 .policy footer { border-top:1px solid #888; padding-top:8px; }
 @media(max-width:520px) {
+  body { margin:8px 16px; }
   th,td { padding:4px; overflow-wrap:anywhere; }
   .directory td:first-child { width:23%; }
   .directory td:last-child { width:31%; }
