@@ -1,6 +1,6 @@
 # Kebijakan Privasi Aplikasi
 
-Pusat kebijakan privasi aplikasi Raka Agi Saputra / MetroLabs, diterbitkan menggunakan GitHub Pages. Setiap aplikasi mempunyai URL sendiri agar kebijakannya dapat diperbarui secara terpisah.
+Pusat kebijakan privasi aplikasi Raka Agi Saputra / Metro Labs, diterbitkan menggunakan GitHub Pages. Setiap aplikasi mempunyai URL sendiri agar kebijakannya dapat diperbarui secara terpisah.
 
 **Halaman utama:** https://rakaascode.github.io/privacy-policy/
 

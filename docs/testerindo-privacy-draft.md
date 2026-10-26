@@ -74,5 +74,5 @@ Tanggal berlaku belum ditetapkan karena dokumen ini masih berupa draf.
 ## 12. Hubungi pengelola
 
 Nama layanan: Testerindo.
-Usulan pengelola: Raka Agi Saputra / MetroLabs, mengikuti identitas pusat kebijakan saat ini; perlu dikonfirmasi untuk aplikasi Testerindo.
+Usulan pengelola: Raka Agi Saputra / Metro Labs, mengikuti identitas pusat kebijakan saat ini; perlu dikonfirmasi untuk aplikasi Testerindo.
 Usulan kontak: metrolabssoftware@gmail.com, mengikuti kontak pusat kebijakan saat ini; perlu dikonfirmasi sebelum penerbitan.
