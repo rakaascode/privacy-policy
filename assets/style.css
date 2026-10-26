@@ -56,3 +56,8 @@ code,.perm-name { font-family:monospace; font-size:.9em; overflow-wrap:anywhere;
   .app-header .app-title { font-size:32px; }
   .policy-meta { flex-direction:column; gap:4px; }
 }
+
+/* Testerindo: plain sections without separator lines. */
+.testerindo .app-header, .testerindo .draft, .testerindo .toc, .testerindo .site-footer { border:0; }
+.testerindo .site-footer { margin-top:28px; padding:12px 0 8px; }
+.testerindo .site-footer p { margin:4px 0; }
