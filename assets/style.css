@@ -69,3 +69,11 @@ th, td { border:0; }
 .callout { border:0; padding-left:0; }
 .site-footer { margin-top:28px; padding:12px 0 8px; font-size:13px; }
 .site-footer p { margin:4px 0; }
+
+/* Justify policy prose, keeping navigation and metadata left aligned. */
+.policy section p, .policy section li, .policy .summary-card p, .policy .draft p {
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+.policy .contact-box p { text-align:left; }
