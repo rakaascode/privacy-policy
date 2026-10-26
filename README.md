@@ -57,3 +57,5 @@ Halaman Testerindo diterbitkan sebagai draf untuk ditinjau. Asumsi tentang data,
 ## Aturan penulisan dan tampilan
 
 Ikuti [AGENTS.md](AGENTS.md) untuk setiap kebijakan baru: bahasa ringkas, daftar poin, tabel bergaris, tampilan HTML klasik yang konsisten, dan isi berdasarkan praktik aplikasi yang terverifikasi.
+
+Acuan utama desain kebijakan baru adalah [`wifora/index.html`](wifora/index.html), dengan CSS bersama. Tiru struktur tampilannya; sesuaikan seluruh isi dengan fakta aplikasi masing-masing.
