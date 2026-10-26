@@ -42,3 +42,17 @@ code,.perm-name { font-family:monospace; font-size:.9em; overflow-wrap:anywhere;
   .directory td:first-child { width:23%; }
   .directory td:last-child { width:31%; }
 }
+
+/* App identity and policy metadata. */
+.policy .app-header { padding:16px 0; margin-bottom:12px; }
+.app-header .app-title { font-size:36px; line-height:1.1; margin:0 0 6px; }
+.app-header .policy-title { font-size:24px; line-height:1.2; margin:0 0 8px; font-weight:normal; }
+.app-description { margin:0; line-height:1.4; }
+.policy-meta { display:flex; flex-wrap:wrap; gap:6px 28px; margin:14px 0 0; font-size:14px; line-height:1.4; }
+.policy-meta div { display:flex; gap:5px; }
+.policy-meta dt { font-weight:bold; }
+.policy-meta dd { margin:0; }
+@media(max-width:520px) {
+  .app-header .app-title { font-size:32px; }
+  .policy-meta { flex-direction:column; gap:4px; }
+}
