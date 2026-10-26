@@ -53,3 +53,7 @@ Kontak: metrolabssoftware@gmail.com
 ## Status Testerindo
 
 Halaman Testerindo diterbitkan sebagai draf untuk ditinjau. Asumsi tentang data, penyedia layanan, masa retensi, penghapusan, kontak, dan batas usia belum diverifikasi. Label draf tetap ditampilkan sampai isi sesuai implementasi aplikasi.
+
+## Aturan penulisan dan tampilan
+
+Ikuti [AGENTS.md](AGENTS.md) untuk setiap kebijakan baru: bahasa ringkas, daftar poin, tabel bergaris, tampilan HTML klasik yang konsisten, dan isi berdasarkan praktik aplikasi yang terverifikasi.
