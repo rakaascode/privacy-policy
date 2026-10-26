@@ -7,6 +7,7 @@ Pusat kebijakan privasi aplikasi Raka Agi Saputra / MetroLabs, diterbitkan mengg
 | Aplikasi | Kebijakan privasi | Bahasa |
 | --- | --- | --- |
 | Wifora | https://rakaascode.github.io/privacy-policy/wifora/ | English |
+| Testerindo (draf, belum berlaku) | https://rakaascode.github.io/privacy-policy/testerindo/ | Bahasa Indonesia |
 
 Kebijakan Wifora sebelumnya ditampilkan pada halaman utama. Isi dan tanggal berlaku kebijakan tersebut dipertahankan di `wifora/index.html`. Tautan utama sekarang menampilkan direktori, dengan tautan yang jelas ke Wifora; tautan lama dengan `#section-1` sampai `#section-9` diarahkan ke bagian kebijakan yang sesuai.
 
@@ -16,6 +17,7 @@ Kebijakan Wifora sebelumnya ditampilkan pada halaman utama. Isi dan tanggal berl
 index.html                      # Direktori aplikasi
 assets/style.css                # Tampilan direktori
 wifora/index.html               # Kebijakan Wifora
+testerindo/index.html           # Draf publik kebijakan Testerindo
 nama-aplikasi/index.html        # Pola untuk aplikasi mendatang
 docs/privacy-policy-template.md # Template draf, bukan kebijakan aktif
 .nojekyll                      # Publikasi HTML statis tanpa Jekyll
@@ -47,3 +49,7 @@ Buka http://localhost:8000/ dan http://localhost:8000/wifora/.
 Pengaturan: **Settings → Pages → Deploy from a branch → main → / (root)**.
 
 Kontak: metrolabssoftware@gmail.com
+
+## Status Testerindo
+
+Halaman Testerindo diterbitkan sebagai draf untuk ditinjau. Asumsi tentang data, penyedia layanan, masa retensi, penghapusan, kontak, dan batas usia belum diverifikasi. Label draf tetap ditampilkan sampai isi sesuai implementasi aplikasi.
