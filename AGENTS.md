@@ -35,7 +35,7 @@ Aturan ini berlaku untuk seluruh repository dan setiap aplikasi baru. Instruksi 
 - Ringkasan memakai judul kecil dan satu kalimat penjelasan, tanpa kartu atau ikon. Hanya tampilkan manfaat atau praktik privasi yang sudah terverifikasi; jangan memaksakan ringkasan bila belum ada fakta.
 - Sediakan daftar isi dengan tautan bagian yang valid untuk dokumen dengan beberapa bagian.
 - Setiap bagian memakai penjelasan singkat, daftar poin bila ada rincian sejajar, dan tabel bila membantu perbandingan. Hindari paragraf panjang atau mengulang informasi.
-- Semua halaman mempunyai footer konsisten dengan identitas aplikasi/pengelola, kontak, copyright, dan status draf jika relevan. Gunakan identitas serta kontak yang sudah dikonfirmasi; tandai usulan jika belum.
+- Footer seluruh halaman hanya memuat `© 2026 PT Metro Labs Software`, tanpa nama pribadi, nama aplikasi, kontak, atau keterangan tambahan. Kontak dan status draf ditempatkan pada bagian isi yang sesuai.
 
 ## Struktur dan penerbitan
 
@@ -51,3 +51,5 @@ Aturan ini berlaku untuk seluruh repository dan setiap aplikasi baru. Instruksi 
 
 - Penulisan nama merek: `Metro Labs` (dua kata). Identitas copyright: `PT Metro Labs Software`.
 - Gunakan teks copyright berikut pada seluruh halaman: `© 2026 PT Metro Labs Software`.
+
+- Jangan tampilkan nama pribadi atau label `rakaascode / Privacy` pada hub, metadata halaman, maupun footer. Gunakan identitas perusahaan untuk metadata hub.
