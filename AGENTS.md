@@ -53,3 +53,5 @@ Aturan ini berlaku untuk seluruh repository dan setiap aplikasi baru. Instruksi 
 - Gunakan teks copyright berikut pada seluruh halaman: `© 2026 PT Metro Labs Software`.
 
 - Jangan tampilkan nama pribadi atau label `rakaascode / Privacy` pada hub, metadata halaman, maupun footer. Gunakan identitas perusahaan untuk metadata hub.
+
+- Pasang favicon bersama dari `assets/favicon.ico` pada setiap halaman. Gunakan parameter `?v=` berdasarkan hash isi favicon, dan perbarui ketika ikon diganti agar browser mengambil versi terbaru.
