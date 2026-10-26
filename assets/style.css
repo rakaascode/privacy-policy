@@ -65,7 +65,7 @@ code,.perm-name { font-family:monospace; font-size:.9em; overflow-wrap:anywhere;
 /* Consistent line-free layout and footer across all pages. */
 .policy header, .draft, .toc, .policy footer { border:0; }
 hr { display:none; }
-th, td { border:0; }
+th, td { border:1px solid #999; }
 .callout { border:0; padding-left:0; }
 .site-footer { margin-top:28px; padding:12px 0 8px; font-size:13px; }
 .site-footer p { margin:4px 0; }
