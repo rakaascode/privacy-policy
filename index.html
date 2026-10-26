@@ -6,54 +6,46 @@
   <meta name="description" content="Daftar kebijakan privasi aplikasi Raka Agi Saputra dan MetroLabs.">
   <title>Kebijakan Privasi Aplikasi - rakaascode</title>
   <style>
-    body {
-      max-width: 760px;
-      margin: 32px auto;
-      padding: 0 16px;
-      background: white;
-      color: black;
-      font-family: "Times New Roman", Times, serif;
-      font-size: 16px;
-      line-height: 1.5;
+    body { margin:8px; background:#fff; color:#000; font:16px/1.25 "Times New Roman",Times,serif; }
+    a:link { color:#0000ee; }
+    a:visited { color:#551a8b; }
+    a:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
+    h1 { font-size:24px; margin:12px 0 6px; }
+    p { margin:6px 0; }
+    hr { margin:8px 0; border:0; border-top:1px solid #888; }
+    table { width:100%; border-collapse:collapse; margin:8px 0; }
+    caption { text-align:left; font-weight:bold; margin-bottom:4px; }
+    th,td { border:1px solid #999; padding:5px 7px; text-align:left; vertical-align:top; }
+    th { background:#eee; }
+    td:first-child { width:130px; }
+    td:last-child { width:230px; }
+    footer { font-size:13px; }
+    .contact { overflow-wrap:anywhere; }
+    @media(max-width:520px) {
+      th,td { padding:4px; overflow-wrap:anywhere; }
+      td:first-child { width:23%; }
+      td:last-child { width:31%; }
     }
-    a:link { color: #0000ee; }
-    a:visited { color: #551a8b; }
-    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
-    li { margin-bottom: 20px; }
-    li p { margin: 4px 0; }
-    address { font-style: normal; overflow-wrap: anywhere; }
-    footer { margin-top: 32px; }
   </style>
 </head>
 <body>
   <header>
-    <p><a href="./">rakaascode</a> / Kebijakan Privasi</p>
+    <div><a href="./">rakaascode</a> / Privacy</div>
     <h1>Kebijakan Privasi Aplikasi</h1>
-    <p>Daftar kebijakan privasi aplikasi dari Raka Agi Saputra dan MetroLabs.</p>
-    <hr>
+    <p>Raka Agi Saputra / MetroLabs. Pilih aplikasi untuk membaca kebijakan privasinya.</p>
   </header>
   <main>
-    <h2>Daftar aplikasi</h2>
-    <ul>
-      <li>
-        <a href="wifora/"><strong>Wifora</strong></a> (English)
-        <p>Aplikasi percakapan melalui jaringan Wi-Fi lokal.</p>
-        <p>Berlaku sejak <time datetime="2026-08-15">15 Agustus 2026</time>.</p>
-      </li>
-      <li>
-        <a href="testerindo/"><strong>Testerindo</strong></a> (Bahasa Indonesia)
-        <p>Layanan closed testing aplikasi Android.</p>
-        <p><strong>Draf:</strong> belum berlaku sebagai kebijakan resmi.</p>
-      </li>
-    </ul>
-    <hr>
-    <h2>Kontak</h2>
-    <address>Email: <a href="mailto:metrolabssoftware@gmail.com">metrolabssoftware@gmail.com</a></address>
+    <table>
+      <caption>Daftar aplikasi (2)</caption>
+      <thead><tr><th scope="col">Aplikasi</th><th scope="col">Keterangan</th><th scope="col">Kebijakan</th></tr></thead>
+      <tbody>
+        <tr><td><a href="wifora/">Wifora</a></td><td>Percakapan melalui Wi-Fi lokal.</td><td>English<br>Berlaku: <time datetime="2026-08-15">15 Agustus 2026</time></td></tr>
+        <tr><td><a href="testerindo/">Testerindo</a></td><td>Layanan closed testing Android.</td><td>Bahasa Indonesia<br><strong>Draf — belum berlaku</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="contact">Kontak: <a href="mailto:metrolabssoftware@gmail.com">metrolabssoftware@gmail.com</a></p>
   </main>
-  <footer>
-    <hr>
-    <p><small>&copy; 2026 Raka Agi Saputra / MetroLabs</small></p>
-  </footer>
+  <footer><hr><p>&copy; 2026 Raka Agi Saputra / MetroLabs</p></footer>
   <script>
     // Keep existing Wifora section links working.
     if (/^#section-[1-9]$/.test(window.location.hash)) {
